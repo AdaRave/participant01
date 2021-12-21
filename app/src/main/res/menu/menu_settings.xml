@@ -13,7 +13,8 @@
         android:title="Settings"
         android:icon="@drawable/settings"
         app:showAsAction="never"
-        android:id="@+id/item_settings" />
+        android:id="@+id/item_settings"
+        android:onClick="click"/>
 
 
 

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             if(it) imageView4.visibility = View.VISIBLE
             else imageView4.visibility = View.INVISIBLE
         }
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -32,5 +35,10 @@ class MainActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
 
 
+    }
+
+    fun click(item: MenuItem) {
+        val intent4 = Intent(this, SettingsActivity::class.java)
+        startActivity(intent4)
     }
 }
